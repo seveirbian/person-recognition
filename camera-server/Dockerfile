@@ -14,6 +14,6 @@ RUN wget https://raw.githubusercontent.com/seveirbian/face-recognition/master/ca
     wget https://raw.githubusercontent.com/seveirbian/face-recognition/master/camera-server/camera-server.py && \
     wget https://raw.githubusercontent.com/seveirbian/face-recognition/master/camera-server/camera_opencv.py
  
-RUN apt-get remove python-pip wget -y
+RUN apt-get remove python-pip wget git -y
 
 CMD python camera-server.py
