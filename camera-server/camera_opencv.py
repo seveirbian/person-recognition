@@ -15,7 +15,7 @@ class Camera(BaseCamera):
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
             
-        camera.set(3,352) #设置分辨率  
+        camera.set(3,352) 
         camera.set(4,288)
 
         while True:
