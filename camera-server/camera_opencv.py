@@ -14,6 +14,9 @@ class Camera(BaseCamera):
         camera = cv2.VideoCapture(Camera.video_source)
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
+            
+        camera.set(3,352) #设置分辨率  
+        camera.set(4,288)
 
         while True:
             # read current frame
