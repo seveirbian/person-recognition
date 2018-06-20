@@ -81,7 +81,7 @@ if __name__ == "__main__":
     # import model and load weights
     global server_addr
     global pic_num
-    pic_num = 0
+    pic_num = 1
 
     if len(sys.argv) == 1 or len(sys.argv) > 2:
         print("you should only input on argv: server_addr,\nlike: 192.168.1.1:5000\n")
