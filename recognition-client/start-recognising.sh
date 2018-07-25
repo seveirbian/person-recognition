@@ -2,7 +2,12 @@
 #
 # @Author: Bian
 # @Abstract: run recognition-client on x86_64
-# @Date: 2018.06.20
+# @Date: 2018.07.25
+
+if [ "$1" == "" ]; then
+        echo "ERROR:   require server IP, like 192.168.1.1 "
+        exit
+fi
 
 xhost +
 
@@ -13,4 +18,5 @@ docker run -d --name recognition-client --rm \
         -e GDK_DPI_SCALE \
         -w /recongnition-client \
         seveirroy/recognition-client \
-        python3 recognition-client.py 10.11.33.62:5000
+        python3 recognition-client.py $1:5000
+~                                                
