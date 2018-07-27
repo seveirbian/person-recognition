@@ -11,6 +11,7 @@ docker run -it --rm --name face-detect \
         -e DISPLAY=unix$DISPLAY \
         -e GDK_SCALE \
         -e GDK_DPI_SCALE \
+	--device /dev/video0:/dev/video0 \
         -w / \
-        face-detect \
-        /bin/bash
+        face-detect\
+        python /face-detection/face-detec.py
