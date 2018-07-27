@@ -15,9 +15,9 @@ resY = 320
 
 
 # The face cascade file to be used
-face_cascade=cv2.CascadeClassifier('/face-detection/haarcascade_frontalface_default.xml')
+face_cascade=cv2.CascadeClassifier('/haarcascade_frontalface_default.xml')
 
-eye_cascade=cv2.CascadeClassifier('/face-detection/haarcascade_eye.xml')
+eye_cascade=cv2.CascadeClassifier('/haarcascade_eye.xml')
 
 face_color = (192,220,240)   
 eye_color = (200,160,164)
