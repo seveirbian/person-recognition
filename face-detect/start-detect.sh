@@ -14,4 +14,4 @@ docker run -it --rm --name face-detect \
 	--device /dev/video0:/dev/video0 \
         -w / \
         face-detect\
-        python /face-detection/face-detec.py
+        python /face-detec.py
