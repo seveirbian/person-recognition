@@ -6,12 +6,6 @@
 
 xhost +
 
-docker run -it --rm --name face-detect \
-        -v /tmp/.X11-unix:/tmp/.X11-unix \
-        -e DISPLAY=unix$DISPLAY \
-        -e GDK_SCALE \
-        -e GDK_DPI_SCALE \
-	--device /dev/video0:/dev/video0 \
-        -w / \
+docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE --device /dev/video0:/dev/video0 -w / \
         face-detect\
         python /face-detec.py
